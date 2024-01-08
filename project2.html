@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout Masterclass</title>
+    <link rel="stylesheet" href="/styles/project2.scss">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Pixelify+Sans&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="back__btn" onClick="location.href='index.html'"><i class="bi bi-house-door-fill"></i></div>
+    <div class="phone__1">
+        <header class="header">
+            <span class="header__btn"><i class="bi bi-chevron-left"></i></span>
+            <h1 class="header__title">CHECKOUT</h1>
+            <span class="header__btn"><i class="bi bi-list"></i></span>
+        </header>
+        <section class="info">
+            <div class="info__left">
+                <span class="info__left-date">01/02</span>
+                <sapn class="info__left-title">INFORMATION</sapn>
+            </div>
+            <img src="img/bar1.png" alt="" class="info__right-img">
+        </section>
+        <section class="total">
+            <div class="total__left">
+                <span class="total__left-title">ORDER SUMMARY</span>
+                <span class="total__left-subtitle">5 items in your cart</span>
+            </div>
+            <div class="total__right">
+                <span class="total__right-purchase">€ 3550</span>
+                <i class="bi bi-chevron-down"></i>
+            </div>
+        </section>
+        <section class="menu__list">
+            <div class="menu">
+                <div class="menu__left">
+                    <span class="menu__title">Delivery</span>
+                    <span class="menu__subtitle">UPS International - Ecpress Shipping</span>    
+                </div>
+                <div class="menu__right">
+                    <i class="bi bi-arrow-right"></i>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="menu__left">
+                    <span class="menu__title">Payment<br>method</span>
+                    <span class="menu__subtitle">Credit card - ending in 4100</span>    
+                </div>
+                <div class="menu__right">
+                    <i class="bi bi-arrow-right"></i>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="menu__left">
+                    <span class="menu__title">Address</span>
+                    <span class="menu__subtitle">Preferred address - Home #1</span>
+                </div>
+                <div class="menu__right">
+                    <i class="bi bi-arrow-right"></i>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="menu__left">
+                    <span class="menu__title">Phone<br>number</span>
+                    <span class="menu__subtitle">Preferred number - 444-444-5454</span>
+                </div>
+                <div class="menu__right">
+                    <i class="bi bi-arrow-right"></i>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer__btn">
+                <span class="footer__btn-text">PROCEED TO THE NEXT STEP</span>
+            </div>
+        </footer>
+    </div>
+    <div class="phone__2">
+        <header class="header">
+            <span class="header__btn"><i class="bi bi-chevron-left"></i><i class="bi bi-list"></i></span>
+            <h1 class="header__title">MY CART</h1>
+            <span class="header__btn"><i class="bi bi-cart-fill"></i></span>
+        </header>
+        <section class="total">
+            <span class="total__price">€ 3550</span><span class="total__subtitle">based on your 5 items</span>
+        </section>
+        <section class="items">
+            <article class="item">
+                <div class="item__info">
+                    <div class="item__info-col">
+                        <h2 class="item__title">Pop<br>Temple<br>Print<br>T-<br>shirt</h2>
+                        <h3 class="item__subtitle">versace limited 2021</h3>
+                    </div>
+                    <div class="item__info-col">
+                        <span class="item__total-price">€ 1990</span>
+                        <span class="item__piece-price">€ 995 per piece</span>
+                    </div>
+                </div>
+                <div class="item__specs">
+                    <div class="spec">
+                        <span class="spce__title">SIZE</span>
+                        <span class="spce__value">48 - L ↓</span>
+                    </div>
+                    <div class="spec">
+                        <span class="spce__title">QT</span>
+                        <span class="spce__value">2 pcs ↓</span>
+                    </div>
+                </div>
+                <img src="https://source.unsplash.com/random?T-shirt" alt="" class="item__photo">
+            </article>
+            <article class="item">
+                <div class="item__info">
+                    <div class="item__info-col">
+                        <h2 class="item__title">CHAIN<br>REACTIO<br>N<br>TRAINE<br>RS</h2>
+                        <h3 class="item__subtitle"> versace limited 2021</h3>
+                    </div>
+                    <div class="item__info-col">
+                        <span class="item__total-price">€ 1998</span>
+                        <span class="item__piece-price">€ 995 per piece</span>
+                    </div>
+                </div>
+                <div class="item__specs">
+                    <div class="spec">
+                        <span class="spce__title">SIZE</span>
+                        <span class="spce__value">45 ↓</span>
+                    </div>
+                    <div class="spec">
+                        <span class="spce__title">QT</span>
+                        <span class="spce__value">2 pcs ↓</span>
+                    </div>
+                </div>
+                <img src="https://source.unsplash.com/random?shoes" alt="" class="item__photo">
+            </article>       
+        </section>
+    </div>
+    <div class="phone__3">
+        <header class="header">
+            <span class="header__btn"><i class="bi bi-chevron-left"></i></span>
+            <h1 class="header__title">CHECKOUT</h1>
+            <span class="header__btn"><i class="bi bi-list"></i></span>
+        </header>
+        <section class="info">
+            <div class="info__left">
+                <span class="info__left-date">02/02</span>
+                <sapn class="info__left-title">INFORMATION</sapn>
+            </div>
+            <img src="img/bar2.png" alt="" class="info__right-img">
+        </section>
+        <section class="total">
+            <div class="total__left">
+                <span class="total__left-title">ORDER SUMMARY</span>
+                <span class="total__left-subtitle">5 items in your cart</span>
+            </div>
+            <div class="total__right">
+                <span class="total__right-purchase">€ 3550</span>
+                <i class="bi bi-chevron-up"></i>
+            </div>
+        </section>
+        <section class="menu__list">
+            <div class="menu">
+                <div class="menu__left">
+                    <span class="menu__left-size">SIZE: 48 - L</span>
+                    <img src="https://source.unsplash.com/random?T-shirt" alt="" class="menu__left-img">
+                    <span class="menu__left-qt">QT: 2 PIECES</span>
+                </div>
+                <div class="menu__right">
+                    <span class="menu__cancle"><i class="bi bi-x-circle"></i></span>
+                    <span class=" menu__title">POP<br>TEMPLE<br>PRINT<br>T-SHIRT</span>
+                    <span class="menu__price">€ 3550</span>
+                </div>   
+            </div>
+            <div class="menu">
+                <div class="menu__left">
+                    <span class="menu__left-size">SIZE: 45 - EU</span>
+                    <img src="https://source.unsplash.com/random?shoes" alt="" class="menu__left-img">
+                    <span class="menu__left-qt">QT: 1 PIECES</span>
+                </div>
+                <div class="menu__right">
+                    <span class="menu__cancle"><i class="bi bi-x-circle"></i></span>
+                    <span class=" menu__title">CHAIN<br>REACTION<br>TRAINERS<br></span>
+                    <span class="menu__price">€ 1998</span>
+                </div>   
+            </div>
+        </section>
+        <section class="schedule">
+            <h2 class="schedule__title">Schedule<br>delivery</h2>
+            <div class="schedule__btn">
+                <span class="btn__1">UNDER AN HOUR</span>
+                <span class="btn__2">DELIVERY WINDOW</span>
+            </div>
+            <ul class="schedule__menu-list">
+                <li class="schedule__menu">
+                    <span class="menu__icon"><i class="bi bi-calendar"></i></span>
+                    <span class="menu__title">Mar 22</span>
+                </li>
+                <li class="schedule__menu">
+                    <span class="menu__icon"><i class="bi bi-clock"></i></span>
+                    <span class="menu__title">Select delivery time range</span>
+                </li>
+            </ul>
+        </section>
+        <footer>
+            <div class="footer__btn">
+                <span class="footer__btn-text">SUMMARY AND PLACE ORDER</span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
