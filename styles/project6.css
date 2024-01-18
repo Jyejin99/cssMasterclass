@@ -1,0 +1,243 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.wrap__left .left__subgrid .hd__size-wrap .hd__size .hd__size-img-4, .wrap__left .left__subgrid .hd__size-wrap .hd__size .hd__size-img-3, .wrap__left .left__subgrid .hd__size-wrap .hd__size .hd__size-img-2, .wrap__left .left__subgrid .hd__size-wrap .hd__size .hd__size-img-1 {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.back__btn {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  font-size: 30px;
+  margin: 20px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 100%;
+}
+
+body {
+  height: 100vh;
+  min-width: -moz-min-content;
+  min-width: min-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #B0B5B9;
+  font-family: "Cabin", sans-serif;
+}
+
+.wrap {
+  background-color: #E4E5E9;
+  color: rgb(70, 70, 70);
+  width: 90%;
+  min-width: 600px;
+  height: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  grid-template-rows: 1fr;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.wrap::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+.wrap__left .left__subgrid {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+.wrap__left .left__subgrid .hd__size-wrap {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  border-right: 2px solid black;
+}
+.wrap__left .left__subgrid .hd__size-wrap:nth-child(3) {
+  border-top: 2px solid black;
+}
+.wrap__left .left__subgrid .hd__size-wrap .hd__size {
+  display: grid;
+  grid-template-rows: 0.3fr 1fr 0.3fr;
+  padding: 10%;
+}
+.wrap__left .left__subgrid .hd__size-wrap .hd__size .hd__size-top {
+  font-size: 24px;
+}
+.wrap__left .left__subgrid .hd__size-wrap .hd__size .hd__size-img-1 {
+  background-image: url("../img/hd__1.png");
+}
+.wrap__left .left__subgrid .hd__size-wrap .hd__size .hd__size-img-2 {
+  background-image: url("../img/hd__2.png");
+}
+.wrap__left .left__subgrid .hd__size-wrap .hd__size .hd__size-img-3 {
+  background-image: url("../img/hd__3.png");
+}
+.wrap__left .left__subgrid .hd__size-wrap .hd__size .hd__size-img-4 {
+  background-image: url("../img/hd__4.png");
+}
+.wrap__left .left__subgrid .hd__size-wrap .hd__size .hd__size-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrap__left .left__subgrid .hd__size-wrap .hd__size .hd__size-bottom .data span:first-child {
+  font-size: 20px;
+  margin-right: 2%;
+}
+.wrap__left .left__subgrid .hd__size-wrap .hd__size .hd__size-bottom .data span:last-child {
+  font-size: 10px;
+}
+.wrap__left .left__subgrid .hd__size-wrap .second {
+  border-top: 2px solid black;
+}
+.wrap__left .left__subgrid .hd__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+.wrap__left .left__subgrid .hd__info .hd__info-data span {
+  font-size: 10px;
+}
+.wrap__left .left__subgrid .hd__info .hd__info-data h1 {
+  font-size: 80px;
+}
+.wrap__left .left__subgrid .hd__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid black;
+}
+.wrap__left .left__subgrid .hd__menu .hd__menu-list {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 70%;
+}
+.wrap__left .left__subgrid .hd__menu .hd__menu-list li {
+  padding: 10% 0;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  align-items: center;
+  height: 100%;
+}
+.wrap__left .left__subgrid .hd__menu .hd__menu-list li:first-child span:first-child {
+  background-image: url("../img/hd__icon1.png");
+}
+.wrap__left .left__subgrid .hd__menu .hd__menu-list li:nth-child(2) span:first-child {
+  background-image: url("../img/hd__icon2.png");
+}
+.wrap__left .left__subgrid .hd__menu .hd__menu-list li:last-child span:first-child {
+  background-image: url("../img/hd__icon3.png");
+}
+.wrap__left .left__subgrid .hd__menu .hd__menu-list li span:first-child {
+  background-size: contain;
+  background-repeat: no-repeat;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  background-position: right;
+  width: 80%;
+  height: 100%;
+}
+.wrap__left .left__subgrid .hd__menu .hd__menu-list li span:last-child {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.wrap__right .right__subgrid {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1.1fr 0.2fr 0.5fr 1fr 2fr;
+  border-left: 2px solid black;
+}
+.wrap__right .right__subgrid .capacity {
+  display: flex;
+}
+.wrap__right .right__subgrid .capacity:first-child {
+  background-color: #E4E5E9;
+}
+.wrap__right .right__subgrid .capacity:nth-child(2) {
+  background-color: #ECC214;
+}
+.wrap__right .right__subgrid .capacity:nth-child(3) {
+  background-color: #7F848A;
+}
+.wrap__right .right__subgrid .capacity:nth-child(4) {
+  background-color: #E21A01;
+  color: white;
+}
+.wrap__right .right__subgrid .capacity:last-child {
+  background-color: #392AA9;
+  color: white;
+}
+.wrap__right .right__subgrid .capacity .capacity__title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+  text-transform: uppercase;
+}/*# sourceMappingURL=project6.css.map */

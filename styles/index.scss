@@ -1,0 +1,194 @@
+@import "../styles/reset.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+// color
+$point_1 : #DDF2FD;
+$point_2 : #9BBEC8;
+$point_3 : #427D9D;
+$point_4 : #164863;
+
+html{
+    scroll-behavior: smooth;
+}
+
+.nav__wrap{
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .nav{
+        font-size: 4vw;
+        color: black;
+        cursor: pointer;
+    }
+    .nav__list{
+        padding-top: 10px;
+        li{
+            width: 3vw;
+            height: 3vw;
+            background-color: $point_1;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5px;
+            font-size: 1.5vw;
+            color: $point_4;
+            opacity: 0.7;
+        }
+    }
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+}
+
+.wrap{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr max-content 1fr;
+    justify-content: center;
+}
+
+.header{
+    width: 100vw;
+    min-height: 80vh;
+    background-color: $point_1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    .header__title{
+        font-size: 4vw;
+        color: $point_4;
+    }
+    .header__info{
+        font-size: 3vw;
+        color: $point_3;
+    }
+}
+
+.main{
+    width: 100vw;
+    min-height: calc(100vh-header-footer);
+    background-color: $point_3;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10%;
+    align-items: center;
+    .project__wrap{
+        display: grid;
+        width: 80vw;
+        min-height: 500px;
+        padding: 5%;
+        margin-top: 10%;
+        .project__img{
+            width: 100%;
+            height: 100%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+        }
+        &:first-child>.project__img{
+            background-image: url("../img/Myproject/project__1.png");
+        }
+        &:nth-child(2)>.project__img{
+            background-image: url("../img/Myproject/project__2.png");
+        }
+        &:nth-child(3)>.project__img{
+            background-image: url("../img/Myproject/project__3.png");
+        }
+        &:nth-child(4)>.project__img{
+            background-image: url("../img/Myproject/project__4.png");
+        }
+        &:nth-child(5)>.project__img{
+            background-image: url("../img/Myproject/project__5.png");
+        }
+        &:nth-child(6)>.project__img{
+            background-image: url("../img/Myproject/project__6.png");
+        }
+        &:nth-child(7)>.project__img{
+            background-image: url("../img/Myproject/project__7.png");
+        }
+        &:nth-child(8)>.project__img{
+            background-image: url("../img/Myproject/project__8.png");
+        }
+        &:nth-child(9)>.project__img{
+            background-image: url("../img/Myproject/project__9.png");
+        }
+        &:nth-child(10)>.project__img{
+            background-image: url("../img/Myproject/project__10.png");
+        }
+        .project__title{
+            width: 100%;
+            font-size: 4vw;
+            align-self: center;
+            color: $point_1;
+        }
+        &:nth-child(odd){
+            grid-template-columns: 2fr 1fr;
+            .project__title{
+                text-align: right;
+            }
+        }
+        &:nth-child(even){
+            grid-template-columns: 1fr 2fr;
+            .project__title{
+                order: 1;
+            }
+            .project__img{
+                order: 2;
+            }
+        }
+    }
+}
+
+.footer{
+    width: 100%;
+    height: 60vh;
+    background-color: $point_4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2vw;
+    .footer__top{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3%;
+        span{
+            &:nth-child(1){
+                margin-right: 5%;
+                color: $point_1;
+            }
+            &:nth-child(2){
+                color: $point_2;
+            }
+        }
+    }
+    .footer__bottom{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        span{
+            &:nth-child(1){
+                margin-right: 5%;
+                color: $point_1;
+            }
+            &:nth-child(2){
+                color: $point_2;
+            }
+        }
+    }
+}

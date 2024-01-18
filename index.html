@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Layout Masterclass</title>
+  <link rel="stylesheet" href="/styles/index.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<body>
+  <div class="nav__wrap">
+    <nav class="nav">
+      <i class="bi bi-list"></i>
+    </nav>
+    <ul class="nav__list">
+      <a href="#project__1"><li>1</li></a>
+      <a href="#project__2"><li>2</li></a>
+      <a href="#project__3"><li>3</li></a>
+      <a href="#project__4"><li>4</li></a>
+      <a href="#project__5"><li>5</li></a>
+      <a href="#project__6"><li>6</li></a>
+      <a href="#project__7"><li>7</li></a>
+      <a href="#project__8"><li>8</li></a>
+      <a href="#project__9"><li>9</li></a>
+      <a href="#project__10"><li>10</li></a>
+    </ul>
+  </div>
+  <div class="wrap">
+    <header class="header" id="top">
+      <h1 class="header__title" 
+        data-aos="fade-down"
+        data-aos-anchor-placement="center-bottom"
+        data-aos-duration="1000"
+        data-aos-once="false">
+        CSS Layout Masterclass
+      </h1>
+      <h2 class="header__info"
+        data-aos="zoom-in"
+        data-aos-anchor-placement="center-bottom"
+        data-aos-duration="1000"
+        data-aos-delay="500">
+        Production project - 10
+      </h2>
+    </header>
+    <section class="main">
+      <div class="project__wrap" id="project__1"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        data-aos-delay="300">
+        <div class="project__img" onclick="location.href='/pages/project1.html'"></div>
+        <div class="project__title">Project1</div>
+      </div>
+      <div class="project__wrap" id="project__2"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-delay="300">
+        <div class="project__img" onclick="location.href='/pages/project2.html'"></div>
+        <div class="project__title">Project2</div>
+      </div>
+      <div class="project__wrap" id="project__3"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        data-aos-delay="300">
+        <div class="project__img" onclick="location.href='/pages/project3.html'"></div>
+        <div class="project__title">Project3</div>
+      </div>
+      <div class="project__wrap" id="project__4"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-delay="300">
+        <div class="project__img" onclick="location.href='/pages/project4.html'"></div>
+        <div class="project__title">Project4</div>
+      </div>
+      <div class="project__wrap" id="project__5"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        data-aos-delay="300">
+        <div class="project__img" onclick="location.href='/pages/project5.html'"></div>
+        <div class="project__title">Project5</div>
+      </div>
+      <div class="project__wrap" id="project__6"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-delay="300">
+        <div class="project__img" onclick="location.href='/pages/project6.html'"></div>
+        <div class="project__title">Project6</div>
+      </div>
+      <div class="project__wrap" id="project__7"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        data-aos-delay="300">
+        <div class="project__img" onclick="location.href='/pages/project7.html'"></div>
+        <div class="project__title">Project7</div>
+      </div>
+      <div class="project__wrap" id="project__8"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-delay="300">
+        <div class="project__img" onclick="location.href='/pages/project8.html'"></div>
+        <div class="project__title">Project8</div>
+      </div>
+      <div class="project__wrap" id="project__9"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        data-aos-delay="300">
+        <div class="project__img" onclick="location.href='/pages/project9.html'"></div>
+        <div class="project__title">Project9</div>
+      </div>
+      <div class="project__wrap" id="project__10"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-delay="300">
+        <div class="project__img" onclick="location.href='/pages/project10.html'"></div>
+        <div class="project__title">Project10</div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__top"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-delay="300">
+        <span class="footer__title">Project Period</span>
+        <span class="footer__date">2023.12 ~ 2024.01</span>
+      </div>
+      <div class="footer__bottom"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-delay="300">
+        <span class="footer__title">Reference</span>
+        <span class="footer__date">Nomadcoders</span>
+      </div>
+    </footer>
+  </div>
+  <script>
+    AOS.init();
+
+    $(document).ready(function(){
+      $(".nav__list").hide();
+      $(".nav").click(function(){
+        $(".nav__list").slideToggle("fast");
+      })
+    })
+  </script>
+</body>
+</html>

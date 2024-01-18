@@ -1,0 +1,425 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  height: 100vh;
+  min-height: 900px;
+  min-width: 1280px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #B6BABA;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.back__btn {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  font-size: 30px;
+  margin: 20px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 100%;
+}
+
+.phone__1, .phone__2, .phone__3 {
+  width: 420px;
+  height: 850px;
+  border-radius: 15px;
+  background-color: #C6CACA;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+  overflow-y: hidden;
+}
+
+.phone__3 > .header, .phone__1 > .header {
+  padding: 50px 15px 30px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.phone__3 > .info, .phone__1 > .info {
+  padding: 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+}
+.phone__3 > .info .info__left, .phone__1 > .info .info__left {
+  display: flex;
+  flex-direction: column;
+  color: #C6CACA;
+  gap: 5px;
+}
+.phone__3 > .info .info__left .info__left-date, .phone__1 > .info .info__left .info__left-date {
+  font-size: 14px;
+}
+.phone__3 > .info .info__left .info__left-title, .phone__1 > .info .info__left .info__left-title {
+  font-size: 18px;
+}
+.phone__3 > .info .info__right-img, .phone__1 > .info .info__right-img {
+  width: 80px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.phone__3 > .total, .phone__1 > .total {
+  padding: 15px 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #A2E571;
+}
+.phone__3 > .total .total__left, .phone__1 > .total .total__left {
+  display: flex;
+  flex-direction: column;
+}
+.phone__3 > .total .total__left .total__left-title, .phone__1 > .total .total__left .total__left-title {
+  font-size: 14px;
+}
+.phone__3 > .total .total__left .total__left-subtitle, .phone__1 > .total .total__left .total__left-subtitle {
+  font-size: 10px;
+}
+.phone__3 > .total .total__right .total__right-purchase, .phone__1 > .total .total__right .total__right-purchase {
+  font-size: 16px;
+}
+
+.phone__1 > .menu__list {
+  height: 55%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1.2fr 1fr 1.2fr;
+}
+.phone__1 > .menu__list .menu {
+  padding: 0 10px;
+  background-color: #D7DBDB;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 5px solid black;
+}
+.phone__1 > .menu__list .menu:nth-child(odd) {
+  background-color: #C6CACA;
+}
+.phone__1 > .menu__list .menu:last-child {
+  border-bottom: 5px solid black;
+}
+.phone__1 > .menu__list .menu .menu__left {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.phone__1 > .menu__list .menu .menu__left .menu__title {
+  font-size: 32px;
+}
+.phone__1 > .menu__list .menu .menu__left .menu__subtitle {
+  font-size: 16px;
+}
+.phone__1 > .menu__list .menu .menu__right {
+  font-size: 32px;
+}
+
+.phone__1 > footer {
+  background-color: #A2E571;
+  height: 100%;
+  border-top: 5px solid black;
+  margin-top: 60px;
+}
+.phone__1 > footer .footer__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phone__1 > footer .footer__btn .footer__btn-text {
+  padding-top: 35px;
+}
+
+.phone__2 > .header {
+  padding: 50px 15px 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.phone__2 > .header .header__title {
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.phone__2 > .total {
+  background-color: black;
+  padding: 20px 15px;
+  color: #DEE2E2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-weight: bold;
+  gap: 10px;
+}
+.phone__2 > .total .total__price {
+  font-size: 22px;
+}
+.phone__2 > .total .total__subtitle {
+  font-size: 12px;
+}
+
+.phone__2 > .items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.phone__2 > .items .item {
+  border-top: 5px solid black;
+  position: relative;
+  background-color: #D7DBDB;
+}
+.phone__2 > .items .item .item__info {
+  padding: 20px 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-start;
+}
+.phone__2 > .items .item .item__info .item__info-col {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.phone__2 > .items .item .item__info .item__info-col:nth-child(2) {
+  align-items: flex-end;
+}
+.phone__2 > .items .item .item__info .item__info-col .item__title {
+  font-size: 34px;
+  text-transform: uppercase;
+  font-family: "Rubik Mono One", monospace;
+}
+.phone__2 > .items .item .item__info .item__info-col .item__subtitle {
+  font-size: 14px;
+}
+.phone__2 > .items .item .item__info .item__info-col .item__total-price {
+  font-size: 28px;
+}
+.phone__2 > .items .item .item__info .item__info-col .item__piece-price {
+  font-size: 16px;
+}
+.phone__2 > .items .item .item__specs {
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 110px);
+}
+.phone__2 > .items .item .item__specs .spec {
+  padding: 20px;
+  display: flex;
+  font-weight: bold;
+  flex-direction: column;
+  justify-content: center;
+}
+.phone__2 > .items .item .item__specs .spec:last-child {
+  border-left: 5px solid black;
+}
+.phone__2 > .items .item .item__photo {
+  position: absolute;
+  width: 40%;
+  height: 65%;
+  border: 5px solid black;
+  right: 15px;
+  bottom: 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.phone__3 > .menu__list {
+  height: 30%;
+  background-color: #A2E571;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  display: flex;
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.phone__3 > .menu__list::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+.phone__3 > .menu__list .menu {
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.phone__3 > .menu__list .menu .menu__left {
+  height: 95%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 5fr 1fr;
+  align-items: center;
+  border: 5px solid black;
+}
+.phone__3 > .menu__list .menu .menu__left .menu__left-size {
+  padding: 10px 5px;
+  font-size: 10px;
+  background-color: #D7DBDB;
+}
+.phone__3 > .menu__list .menu .menu__left .menu__left-img {
+  width: 120px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow-y: hidden;
+  border-top: 5px solid black;
+}
+.phone__3 > .menu__list .menu .menu__left .menu__left-qt {
+  padding: 10px 5px;
+  font-size: 10px;
+  background-color: #D7DBDB;
+  border-top: 5px solid black;
+}
+.phone__3 > .menu__list .menu .menu__right {
+  height: 70%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 5fr 1fr;
+  gap: 10px;
+}
+.phone__3 > .menu__list .menu .menu__right .menu__cancle {
+  font-size: 24px;
+}
+.phone__3 > .menu__list .menu .menu__right .menu__title {
+  font-size: 22px;
+}
+.phone__3 > .menu__list .menu .menu__right .menu__price {
+  font-size: 16px;
+}
+
+.schedule {
+  margin-top: 10px;
+  background-color: #D7DBDB;
+  height: 25%;
+  border-top: 5px solid black;
+  padding: 20px 10px;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.schedule::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+.schedule .schedule__title {
+  font-size: 32px;
+}
+.schedule .schedule__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  gap: 15px;
+  font-size: 12px;
+  text-align: center;
+}
+.schedule .schedule__btn > * {
+  width: 40%;
+  padding: 15px;
+  border-radius: 30px;
+}
+.schedule .schedule__btn .btn__1 {
+  border: 3px solid black;
+}
+.schedule .schedule__btn .btn__2 {
+  background-color: black;
+  color: #D7DBDB;
+}
+.schedule .schedule__menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.schedule .schedule__menu-list .schedule__menu {
+  height: 40px;
+  border: 3px solid black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.schedule .schedule__menu-list .schedule__menu .menu__icon {
+  margin-right: 10px;
+}
+
+.phone__3 > footer {
+  background-color: #A2E571;
+  height: 100%;
+  border-top: 5px solid black;
+}
+.phone__3 > footer .footer__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phone__3 > footer .footer__btn .footer__btn-text {
+  padding-top: 35px;
+}
+
+@media screen and (max-width: 980px) {
+  body {
+    display: block;
+    min-width: 500px;
+  }
+  .phone__1, .phone__2, .phone__3 {
+    margin: 20px auto;
+  }
+}/*# sourceMappingURL=project2.css.map */
